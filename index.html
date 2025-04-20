@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutrizApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e85" alt="healthy food">
+    <div>
+      <h1>NutrizApp</h1>
+      <p>Calcola in modo semplice e visivo i tuoi parametri nutrizionali essenziali!</p>
+    </div>
+  </div>
+
+  <form id="form">
+    <label for="sex">👤 Sesso (m/f):</label>
+    <input type="text" id="sex" required>
+
+    <label for="age">🎂 Età (anni):</label>
+    <input type="number" id="age" required>
+
+    <label for="weight">⚖️ Peso attuale (kg):</label>
+    <input type="number" id="weight" required>
+
+    <label for="height">📏 Altezza (cm):</label>
+    <input type="number" id="height">
+
+    <label for="demispan">🖐️ Demispan (cm):
+      <span class="explanation">(Distanza tra sterno e punta del dito medio con braccio teso, usato solo se altezza assente)</span>
+    </label>
+    <input type="number" id="demispan">
+
+    <button type="submit">🚀 Calcola!</button>
+  </form>
+
+  <div class="result" id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
