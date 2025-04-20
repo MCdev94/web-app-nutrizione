@@ -61,6 +61,8 @@ const CONSTANTS = {
     const mifflin = calcolaMifflin(sex, pesoCorretto, height_cm, age);
     const kcal25 = pesoCorretto * CONSTANTS.KCAL_FACTOR;
   
+    document.getElementById('results').classList.add('show');
+    
     document.getElementById("results").innerHTML = `
       <h2>📊 Risultati Nutrizionali</h2>
   
